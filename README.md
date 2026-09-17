@@ -1,3 +1,7 @@
+
+WEB APPLICATION LINK:
+https://aharshana.github.io/hospital-appointment-system/
+
 # 🏥 Hospital Appointment Booking System
 
 A responsive web-based **Hospital Appointment Booking System** developed using **HTML, CSS, and JavaScript**.
@@ -800,5 +804,3 @@ The Hospital Appointment Booking System demonstrates the basic concepts of front
 The current version provides appointment creation, viewing, searching, and cancellation through a responsive web interface.
 
 The application can be further developed into a complete full-stack hospital management solution by adding a backend, REST API, database, authentication, complete CRUD operations, server-side validation, and persistent data storage.
-
-WEB APPLICATION LINK:
