@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏥 CityCare Hospital</h1>
+        <p>Online Appointment Booking System</p>
+    </header>
+
+    <main>
+
+        <section class="booking-card">
+            <h2>Book an Appointment</h2>
+
+            <form id="appointmentForm">
+
+                <label>Patient Name</label>
+                <input type="text" id="patientName" placeholder="Enter patient name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+                <label>Department</label>
+                <select id="department" required>
+                    <option value="">Select Department</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Orthopedics</option>
+                    <option>Dermatology</option>
+                    <option>Pediatrics</option>
+                </select>
+
+                <label>Doctor</label>
+                <select id="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option>Dr. Arun Kumar</option>
+                    <option>Dr. Priya Sharma</option>
+                    <option>Dr. Rahul Singh</option>
+                    <option>Dr. Meena Raj</option>
+                </select>
+
+                <label>Appointment Date</label>
+                <input type="date" id="date" required>
+
+                <label>Appointment Time</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+        </section>
+
+
+        <section class="appointments">
+
+            <h2>Appointments</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by patient name..."
+            >
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Department</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="appointmentTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CityCare Hospital | Appointment Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
